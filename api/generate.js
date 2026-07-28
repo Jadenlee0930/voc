@@ -34,7 +34,7 @@ module.exports = async function handler(req, res) {
     const { mode, image, word, category } = body;
 
     const ai = new GoogleGenAI({ apiKey });
-    const model = 'gemini-3.1-flash-lite';
+    const model = 'gemini-2.5-flash';
 
     let prompt = '';
     let contents = [];
